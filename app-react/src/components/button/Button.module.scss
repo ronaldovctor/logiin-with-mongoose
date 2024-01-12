@@ -1,0 +1,26 @@
+.button {
+	padding: 0.5rem 2rem;
+	background: var(--green-1);
+	color: var(--green-3);
+	font-size: 0.9rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	min-width: 15rem;
+	max-width: fit-content;
+	align-self: center;
+	font-weight: 700;
+	box-shadow: 0 3px 10px var(--green-2);
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover,
+	&:focus {
+		border-color: white;
+	}
+
+	&:disabled {
+		background: var(--green-3);
+		color: white;
+		border-color: white;
+	}
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.04rem;
+	--green-1: #62ffb4;
+	--green-2: #79dfae;
+	--green-3: #0b7441;
+}
+
+h1,
+h2,
+h3,
+p {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	font-size: 1rem;
+	display: block;
+	outline: none;
+	border: 1px solid transparent;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: var(--green-3);
+}
+
+.container {
+	margin: 0 auto;
+	min-width: 75rem;
+}
+
+.mainContainer {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.separator {
+	padding: 0 1rem;
+}
+
+.animeLeft {
+	transform: translateX(-15px);
+	animation: animeLeft 0.3s forwards;
+	opacity: 0;
+}
+
+@keyframes animeLeft {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}
